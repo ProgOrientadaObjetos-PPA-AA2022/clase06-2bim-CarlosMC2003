@@ -29,5 +29,11 @@ public class Auto {
         return valorMatricula;
     }
     
-    
+    @Override
+    public String toString(){
+        String data = String.format("Placa: %s\n"
+                + "Población: %.1f\n", 
+                obtenerPlaca(), obtenerValorMatricula());
+        return data;
+    }
 }
